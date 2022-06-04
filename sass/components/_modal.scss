@@ -1,0 +1,215 @@
+.modal {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+   transform: scale(1);
+   opacity: 1;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__body {
+   position: absolute;
+   width: 528px;
+   min-height: 581px;
+   background-color: #ffffff;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   padding: 40px;
+}
+
+.modal__button-close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   background-color: $mainWhite;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover .modal__close-icon {
+      fill: $acentColor;
+   }
+}
+
+.modal__close-icon {
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   :focus {
+      fill: $acentColor;
+   }
+}
+
+.input__modal-icon {
+   position: relative;
+   bottom: 28px;
+   left: 15px;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input__modal:hover + .input__modal-icon,
+.input__modal:focus + .input__modal-icon {
+   fill: $acentColor;
+}
+
+.input__modal {
+   width: 448px;
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   padding-left: 42px;
+   cursor: pointer;
+   appearance: none;
+   box-shadow: none;
+   outline: none;
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   :focus {
+      border: 1px solid #2196f3;
+   }
+}
+
+.modal__titel {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.2;
+   color: $mainTitleColor;
+   text-align: center;
+   margin-bottom: 12px;
+}
+
+.modal__form textarea {
+   font-family: $mainFont;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.1;
+   padding: 16px 12px;
+   resize: none;
+   width: 100%;
+   height: 120px;
+   overflow-y: auto;
+   appearance: none;
+   box-shadow: none;
+   outline: none;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   :focus {
+      border: 1px solid #2196f3;
+   }
+}
+
+.modal__field {
+   width: 448px;
+   height: 40px;
+   margin-bottom: 10px;
+}
+
+textarea::placeholder {
+   color: rgba(117, 117, 117, 0.5);
+}
+
+.input__modal-text {
+   display: flex;
+   flex-direction: column;
+   line-height: 1.1;
+   font-size: 12px;
+   color: $mainTextColor;
+   &:first-child {
+      margin-top: 12px;
+   }
+}
+.modal-text {
+   margin-bottom: 4px;
+}
+
+.check {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.wrapper_checkbox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: $mainTextColor;
+   font-size: 14px;
+   line-height: 1.7;
+   margin-left: 10px;
+   cursor: pointer;
+   & .check_block {
+      width: 16px;
+      height: 15px;
+      border: 2px solid $mainTitleColor;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-right: 9px;
+      color: $mainTextColor;
+   }
+}
+
+.form-input:checked + .wrapper_checkbox .check_block {
+   background-color: $acentColor;
+   border: transparent;
+}
+
+.form-input:focus + .wrapper_checkbox .check_block {
+   border-color: $acentColor;
+}
+
+.form-input:checked + .wrapper_checkbox .check-icon {
+   fill: $mainWhite;
+}
+
+.check__text {
+   color: $acentColor;
+   text-decoration: underline;
+   margin-left: 5px;
+}
+
+.check-icon {
+   fill: transparent;
+}
+
+.checkbox:checked + .wrapper_checkbox .check-icon {
+   fill: $mainWhite;
+}
+
+.is-hidden {
+   opacity: 0;
+   pointer-events: none;
+   visibility: hidden;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+   transform: scale(0);
+}
+
+.modal__button {
+   width: 200px;
+   height: 50px;
+   background-color: $acentColor;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border: none;
+   color: $mainWhite;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.6;
+   display: block;
+   margin: 30px auto 0 auto;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   :focus {
+      background-color: $ModalButton;
+   }
+}

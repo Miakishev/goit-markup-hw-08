@@ -1,0 +1,108 @@
+.menu-list__link {
+   color: $mainTitleColor;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   margin-top: 32px;
+   margin-bottom: 28px;
+   display: block;
+   border-bottom: 4px solid #fff;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &.active {
+      color: $acentColor;
+      border-bottom: 4px solid #2196f3;
+      padding-bottom: 28px;
+      margin-bottom: 0px;
+   }
+   &::after:hover,
+   ::after:focus {
+      border-bottom: 4px solid #2196f3;
+   }
+   &:hover,
+   :focus {
+      color: $acentColor;
+   }
+}
+
+.header {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.02em;
+   border-bottom: 1px solid #ececec;
+   .container {
+      display: flex;
+      align-items: center;
+   }
+}
+
+.logo-blue {
+   color: $acentColor;
+   font-family: $secondaryFont;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.1;
+}
+
+.header__logo {
+   margin-right: 93px;
+   display: flex;
+   align-items: center;
+   span {
+      color: $mainTitleColor;
+      letter-spacing: 0.03em;
+      font-family: $secondaryFont;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.1;
+   }
+}
+
+.menu-list {
+   display: flex;
+   align-items: center;
+}
+
+.menu-list__item {
+   margin-right: 50px;
+   &li:last-child {
+      margin-right: 0;
+   }
+}
+
+.header__nav-nav {
+   display: flex;
+}
+
+.contact {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+   color: $mainTextColor;
+}
+
+.contact-elem__link {
+   display: flex;
+   color: $mainTextColor;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   :focus {
+      color: $acentColor;
+   }
+   &:hover .contact__icon {
+      fill: $acentColor;
+   }
+}
+
+.contact__icon {
+   fill: $mainTextColor;
+   display: block;
+   margin: auto;
+   margin-right: 10px;
+   margin-left: 10px;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__item:last-child {
+   margin-left: 50px;
+}
