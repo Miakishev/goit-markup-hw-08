@@ -34,9 +34,11 @@
 }
 
 .clients_item {
-   margin-right: 30px;
-   &:last-child {
-      margin-right: 0px;
+   @media screen and (min-width: 480px) {
+      // :nth-child(odd) {
+      //    margin-left: 0px;
+      }
+      width: calc(100% / 2 - 30px);
    }
 }
 
@@ -47,5 +49,7 @@
 
 .clients__list {
    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
    justify-content: center;
 }

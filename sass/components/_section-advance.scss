@@ -8,31 +8,59 @@
    justify-content: center;
    background-color: $backgraundPicture;
    border-radius: 4px;
-   width: 270px;
-   height: 120px;
-   margin-right: 30px;
-   margin-bottom: 30px;
    &:last-child {
       margin-right: 0px;
    }
+   @media screen and (min-width: 480px) {
+      padding: 0;
+      background-color: $backgraundPicture;
+      border-radius: 4px;
+      height: 120px;
+      margin-bottom: 30px;
+   }
 }
-
 .advance__displayed {
    margin: auto;
 }
 
 .advance__list {
-   padding-left: 0%;
-   margin: 0 -15px;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+   @media screen and (min-width: 480px) {
+      max-width: 480px;
+      padding: 0;
+   }
+   @media screen and (min-width: 768px) {
+      max-width: 768px;
+      padding-left: 0%;
+      margin: 0 -15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: auto;
+      padding-left: 0%;
+      margin: 0 -15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
 }
 
 .advance__item {
-   width: calc(25% - 30px);
    margin: 0 15px 0;
    list-style: none;
+   @media screen and (min-width: 480px) {
+      margin: 0 15px 0;
+      list-style: none;
+   }
+   @media screen and (min-width: 768px) {
+      width: calc(100% / 2 - 30px);
+   }
+   @media screen and (min-width: 1200px) {
+      width: calc(25% - 30px);
+   }
 }
 
 .advance__item--title {
@@ -43,6 +71,11 @@
    font-weight: 700;
    font-size: 14px;
    line-height: 1.1;
+   @media screen and (min-width: 480px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
 }
 
 .advance__item--text {
@@ -51,24 +84,8 @@
    line-height: 1.7;
    color: $mainTextColor;
    box-sizing: border-box;
-   max-width: 270px;
    letter-spacing: 0.03em;
-}
-
-.section__title {
-   margin-bottom: 50px;
-   font-weight: 700;
-   font-size: 28px;
-   line-height: 1.1;
-   text-align: center;
-   line-height: 1.1;
-   @media screen and (min-width: 480px) {
-      font-size: 28px;
-   }
-   @media screen and (min-width: 768px) {
-      font-size: 28px;
-   }
    @media screen and (min-width: 1200px) {
-      font-size: 36px;
+      max-width: 270px;
    }
 }
