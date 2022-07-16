@@ -33,6 +33,11 @@
    .container {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      padding: 16px 15px;
+   }
+   @media screen and (max-width: 1200px){
+      
    }
 }
 
@@ -56,6 +61,9 @@
       font-size: 26px;
       line-height: 1.1;
    }
+   @media screen and (max-width: 1000px){
+      margin-right: 60px;
+   }
 }
 
 .menu-list {
@@ -71,15 +79,22 @@
 }
 
 .header__nav-nav {
+   @media screen and (min-width: 768px){
    display: flex;
 }
-
+}
 .contact {
    display: flex;
    align-items: center;
    margin-left: auto;
    color: $mainTextColor;
+@media screen and (max-width: 900px){
+   flex-wrap: wrap;
+   margin-left: auto;
+   color: $mainTextColor;
 }
+}
+
 
 .contact-elem__link {
    display: flex;
@@ -92,8 +107,10 @@
    &:hover .contact__icon {
       fill: $acentColor;
    }
+   @media screen and (max-width: 900px){
+      margin-bottom: 10px;
 }
-
+}
 .contact__icon {
    fill: $mainTextColor;
    display: block;
@@ -105,4 +122,67 @@
 
 .contact__item:last-child {
    margin-left: 50px;
+   @media screen and (max-width: 768px){
+      margin-left: 0; 
+}
+}
+
+.menu-list__link {
+   @media screen and (max-width: 767px){
+   display: none;
+}
+}
+
+.contact {
+   @media screen and (max-width: 767px){
+   display: none;
+}
+}
+.header__menu-btr{
+   border: none;
+   background: none;
+   @media screen and (min-width: 768px){
+      display: none;
+}
+}
+.menu__btr {
+   display: flex;
+    margin: 11px 2px;
+}
+
+
+.mobile-menu {
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+   visibility: visible;
+   transition: all .3s ease-out;
+   background-color: #fff;
+   padding: 48px 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   &__close {
+      position: absolute;
+      top: 21px;
+      right: 21px;
+      z-index: 1;
+      svg {
+         width: 100%;
+         max-width: 100%;
+      }
+      button {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         box-shadow: none;
+         background-color: transparent;
+      }
+   }
+   &__nav {
+      margin-bottom: 40px;
+   }
 }

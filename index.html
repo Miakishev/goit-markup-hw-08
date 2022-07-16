@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <!-- <header class="header">
+   <header class="header">
       <div class="container">
          <nav class="header__nav-nav">
             <a class="logo header__logo" href="./index.html">
@@ -52,10 +52,16 @@
                </a>
             </li>
          </ul>
+         <button type="button" id="" name="" class="header__menu-btr" data-modal-open2>
+            <svg width="24" height="16" class="menu__btr" viewBox="0 0 24 16"  xmlns="http://www.w3.org/2000/svg">
+               <path  clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+               </svg>
+         </button>
       </div>
-   </header> -->
 
-   <main>
+   </header>
+
+    <main>
       <section class="section-hero">
          <div class="container">
             <h1 class="section-hero__title">ЭФФЕКТИВНОЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -111,9 +117,8 @@
          </div>
       </section>
 
-      <!-- Чем занимаемся? -->
       <section class="about">
-         <div class="container">
+           <div class="container"> 
             <h2 class="about__title section__title">Чем мы занимаемся</h2>
             <ul class="about__list">
                <li class="about__item">
@@ -136,10 +141,10 @@
                </li>
             </ul>
          </div>
-      </section>
+      </section> 
 
-      <!-- Наша команда -->
-      <section class="our-team">
+       
+       <section class="our-team"> 
          <div class="container">
             <h2 class="our-team__title section__title">Наша команда</h2>
             <ul class="our-team__list">
@@ -293,9 +298,9 @@
                </li>
             </ul>
          </div>
-      </section>
+      </section> -->
 
-      <section class="clients">
+       <section class="clients">
          <div class="container">
             <h2 class="client__titel">Постоянные клиенты</h2>
             <ul class="clients__list">
@@ -343,9 +348,12 @@
                </li>
             </ul>
          </div>
-      </section>
+   </section> 
+
    </main>
-   <!-- <footer class="footer">
+      
+
+   <footer class="footer">
       <div class="container__footer">
          <div class="footer__list-first">
             <a class="footer__link footer__logo" href="">
@@ -354,7 +362,7 @@
             <ul class="footer__list">
                <li class="footer__item">
                   <a class="footer__link" target="_blank" href="https://goo.gl/maps/AQihvnjRgW8BU76g7">
-                     Киев, пр-т
+                     г.Киев, пр-т
                      Леси
                      Украинки, 26</a>
                </li>
@@ -416,7 +424,7 @@
                </button>
             </label>
          </form>
-      </div> -->
+      </div>
    </footer>
    <div class="modal is-hidden" data-modal>
       <div class="modal__body">
@@ -464,7 +472,55 @@
          </form>
       </div>
    </div>
+
+   <div class="mobile-menu modal2 is-hidden" data-modal2>
+      <div class="mobile-menu__close" data-modal-close2>
+         <button type="button" class="modal__button-close2" >
+            <svg class="modal__close-icon2" width="15" height="15">
+               <use href="./images/icons.svg/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+         </button>
+      </div>
+      <nav class="mobile-menu__nav">
+         <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+               <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+         </ul>
+      </nav>
+
+      <div class="mobile-menu__bottom">
+         <div class="mobile-menu__phone">
+            <a href="tel:380961111111">+38 096 111 11 11</a>
+         </div>
+         <div class="mobile-menu__email">
+            <a class="mobile-menu__address" href="mailto:info@devstudio.com">info@devstudio.com</a>
+         </div>
+         <div class="mobile-menu__social">
+            <a href="" class="mobile-menu__social--item">
+               Instagram
+            </a>
+            <a href="" class="mobile-menu__social--item">
+               Twitter
+            </a>
+            <a href="" class="mobile-menu__social--item">
+               Facebook
+            </a>
+            <a href="" class="mobile-menu__social--item">
+               LinkedIn
+            </a>
+         </div>
+      </div>
+   </div>
+
    <script src="./js/modal.js"></script>
+   <script src="./js/modal2.js"></script>
 </body>
 
 </html>

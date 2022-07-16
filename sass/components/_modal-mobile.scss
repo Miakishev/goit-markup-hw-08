@@ -1,0 +1,61 @@
+.mobile-menu__link {
+    font-family: $mainFont;
+    color: $mainTitleColor;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin: 0 0 32px;
+    display: flex;
+}   
+
+
+.mobile-menu__phone {
+    font-family: $mainFont;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $acentColor;
+}
+
+.mobile-menu__address {
+    font-family: $mainFont;
+    color: $mainTextColor;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    margin:32px 0 64px 0;
+    display: block;
+}
+
+.mobile-menu__social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-menu__social--item {
+    position: relative;
+    color: $acentColor;
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.22;
+}
+
+.mobile-menu__social--item::before{
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 0px;
+    bottom: 10px;
+    left: -23px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}
+
+.mobile-menu__social--item:last-child {
+    margin-right: 0;
+}
+
