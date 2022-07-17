@@ -141,15 +141,22 @@
 .header__menu-btr{
    border: none;
    background: none;
+   &:hover .menu__btr{
+      fill:$acentColor;
+   }
    @media screen and (min-width: 768px){
       display: none;
+      
 }
 }
 .menu__btr {
    display: flex;
     margin: 11px 2px;
+    &:hover,
+   :focus {
+      fill: $acentColor;
 }
-
+}
 
 .mobile-menu {
    position: fixed;
@@ -170,6 +177,10 @@
       top: 21px;
       right: 21px;
       z-index: 1;
+      &:hover,
+         :focus {
+            fill: $acentColor;
+         }
       svg {
          width: 100%;
          max-width: 100%;
@@ -180,6 +191,10 @@
          -webkit-appearance: none;
          box-shadow: none;
          background-color: transparent;
+         &:hover,
+         :focus {
+            fill: $acentColor;
+         }
       }
    }
    &__nav {
