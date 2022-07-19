@@ -143,14 +143,14 @@
 .button-list {
    display: flex;
       justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       &:not(:last-child) {
          margin-right: 8px;
       }
    @media screen and (max-width: 1350px){
       display: flex;
       justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       &:not(:last-child) {
          margin-right: 8px;
       }
@@ -158,7 +158,7 @@
    @media screen and (max-width: 480px) {
       display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     flex-direction: row;
 }
 @media screen and (max-width: 320px){
