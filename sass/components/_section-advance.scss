@@ -1,5 +1,14 @@
 .advance {
-   padding: 94px 0 50px;
+   
+   @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+   }
+   @media screen and (min-width: 768px) {
+      padding-top: 60px;
+   }
+   @media screen and (min-width: 480px) {
+      padding-top: 60px;
+   }
 }
 
 .advance__soc-picture {
@@ -8,6 +17,7 @@
    justify-content: center;
    background-color: $backgraundPicture;
    border-radius: 4px;
+   margin-bottom: 30px;
    &:last-child {
       margin-right: 0px;
    }
@@ -16,7 +26,6 @@
       background-color: $backgraundPicture;
       border-radius: 4px;
       height: 120px;
-      margin-bottom: 30px;
    }
 }
 .advance__displayed {
@@ -24,26 +33,24 @@
 }
 
 .advance__list {
-   max-width: 1200px;
-      padding: 0 15px;
-      margin: auto;
-      padding-left: 0%;
-      display: flex;
+   // max-width: 1200px;
+   //    padding: 0 15px;
+   //    margin: auto;
+   //    padding-left: 0%;
+   //    display: flex;
    @media screen and (max-width: 480px) {
       max-width: 480px;
       padding: 0;
    }
-   @media screen and (max-width: 768px) {
+   @media screen and (min-width: 768px) {
       max-width: 768px;
       padding-left: 0%;
-      margin: 0 -15px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
    }
    @media screen and (min-width: 1200px) {
       max-width: 1200px;
-      padding: 0 15px;
       margin: auto;
       padding-left: 0%;
       display: flex;
@@ -75,7 +82,7 @@
    font-weight: 700;
    font-size: 14px;
    line-height: 1.1;
-   @media screen and (min-width: 480px) {
+   @media screen and (max-width: 480px) {
       display: flex;
       align-items: center;
       justify-content: center;

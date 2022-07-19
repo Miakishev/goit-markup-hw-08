@@ -11,7 +11,7 @@
    }
    @media screen and (min-width: 1200px) {
       display: contents;
-      padding: 44px 0;
+      padding: 94px 0;
       display: block;
    }
 }
@@ -50,7 +50,8 @@
    font-weight: 700;
    font-size: 14px;
    font-style: normal;
-   line-height: 1.1;
+   line-height: 1.14;
    position: absolute;
    color: $mainWhite;
+   text-transform: uppercase;
 }
