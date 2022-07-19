@@ -1072,6 +1072,12 @@ li.footer__item:first-child {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__list-too {
+    margin-right: 93px;
+  }
+}
+
 .footer__join-icon {
   fill: #fff;
 }
@@ -1304,6 +1310,7 @@ li.footer__item:first-child {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0 auto;
     align-items: baseline;
   }
 }
